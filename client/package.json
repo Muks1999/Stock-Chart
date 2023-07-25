@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fontsource/poppins": "^5.0.5",
     "@syncfusion/ej2-react-charts": "^22.1.39",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

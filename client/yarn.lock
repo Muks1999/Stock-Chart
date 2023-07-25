@@ -1304,6 +1304,11 @@
   resolved "https://registry.npmjs.org/@eslint/js/-/js-8.44.0.tgz"
   integrity sha512-Ag+9YM4ocKQx9AarydN0KY2j0ErMHNIocPDrVo8zAE44xLTjEtz81OdR68/cydGtk6m6jDb5Za3r2useMzYmSw==
 
+"@fontsource/poppins@^5.0.5":
+  version "5.0.5"
+  resolved "https://registry.npmjs.org/@fontsource/poppins/-/poppins-5.0.5.tgz"
+  integrity sha512-Y/AGmD6iavfobRb7f2l49q0dQSyisvRrUfJ7F0AWOlTNFty8bbnPBbg+5Qsq5EN6xWaIAn++50aLfOCEe7zu3w==
+
 "@humanwhocodes/config-array@^0.11.10":
   version "0.11.10"
   resolved "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.11.10.tgz"
