@@ -51,7 +51,6 @@ app.post("/api/fetchStockData", (req, res) => {
   else{
     return res.status(200).send({message:"Please Fill all the fields.",status:400});
   }
-  // YOUR CODE GOES HERE, PLEASE DO NOT EDIT ANYTHING OUTSIDE THIS FUNCTION
 });
 
 const port = process.env.PORT || 5000;
