@@ -51,14 +51,19 @@ const App = () => {
     "Please enter required details in the given form."
   );
 
+  //  function to set the selected value of fromDate into toDate.
   const handleDateChange = (e) => {
     var input2 = document.getElementById("toDate");
     input2.value = e.target.value;
   };
 
+  // function to set the value of selected stock into the local state.
+
   const handleSymbolChange = (e) => {
     setSelectedStock(e?.target?.value);
   };
+
+  // Function to handle send data to the server and get the response from the server.
 
   const handleSubmit = (event) => {
     setIsLoading(true);
@@ -112,6 +117,8 @@ const App = () => {
 
       <form onSubmit={handleSubmit}>
         <div className="formData grid-container">
+          {/* Symbol */}
+
           <div className="FormInput grid-item">
             <label for="symbol" className="labelText">
               Symbol&nbsp;
@@ -124,6 +131,9 @@ const App = () => {
               label="Symbol"
             ></input>
           </div>
+
+          {/* After Selection of from date, toDate will automatically selected as same as fromDate So that user can see the data for particular date also. If you want to change toDate you can change*/}
+
           <div className="FormInput grid-item">
             <label for="fromDate" className="labelText">
               From&nbsp;Date&nbsp;
@@ -136,6 +146,9 @@ const App = () => {
               type="date"
             ></input>
           </div>
+
+          {/* To Date  */}
+
           <div className="FormInput grid-item">
             <label for="toDate" className="labelText">
               To&nbsp;Date&nbsp;
@@ -147,6 +160,9 @@ const App = () => {
               type="date"
             ></input>
           </div>
+
+          {/*  Submit Button */}
+
           <input className="FormButton" type="submit"></input>
         </div>
       </form>
