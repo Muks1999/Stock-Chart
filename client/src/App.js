@@ -207,7 +207,7 @@ const App = () => {
 
       {chartData?.length ? (
         <>
-          <div className="">Chart ({selectedStock}) </div>
+          <div className="">Chart ({selectedStock?.toUpperCase()}) </div>
           <div className="e-bigger">
             <StockChartComponent
               key={chartData}
