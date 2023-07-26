@@ -73,7 +73,7 @@ const App = () => {
     console.log(JSON.stringify(requestBody));
     if (requestBody) {
       axios
-        .post(`${baseURL}/api/fetchStockData`, requestBody)
+        .post(`${baseURL}/api/fetchStockData`, {...requestBody,symbol:requestBody?.symbol?.toUpperCase()})
         .then((response) => {
           console.log(response);
           if (response?.data?.status == 200) {
