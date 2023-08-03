@@ -1,44 +1,46 @@
 import "./App.css";
-import {
-  StockChartComponent,
-  StockChartSeriesCollectionDirective,
-  StockChartSeriesDirective,
-  Inject,
-  DateTime,
-  Tooltip,
-  RangeTooltip,
-  Crosshair,
-  LineSeries,
-  SplineSeries,
-  CandleSeries,
-  HiloOpenCloseSeries,
-  HiloSeries,
-  RangeAreaSeries,
-  Trendlines,
-} from "@syncfusion/ej2-react-charts";
-import {
-  EmaIndicator,
-  RsiIndicator,
-  BollingerBands,
-  TmaIndicator,
-  MomentumIndicator,
-  SmaIndicator,
-  AtrIndicator,
-  AccumulationDistributionIndicator,
-  MacdIndicator,
-  StochasticIndicator,
-  Export,
-} from "@syncfusion/ej2-react-charts";
+// import {
+//   StockChartComponent,
+//   StockChartSeriesCollectionDirective,
+//   StockChartSeriesDirective,
+//   Inject,
+//   DateTime,
+//   Tooltip,
+//   RangeTooltip,
+//   Crosshair,
+//   LineSeries,
+//   SplineSeries,
+//   CandleSeries,
+//   HiloOpenCloseSeries,
+//   HiloSeries,
+//   RangeAreaSeries,
+//   Trendlines,
+// } from "@syncfusion/ej2-react-charts";
+// import {
+//   EmaIndicator,
+//   RsiIndicator,
+//   BollingerBands,
+//   TmaIndicator,
+//   MomentumIndicator,
+//   SmaIndicator,
+//   AtrIndicator,
+//   AccumulationDistributionIndicator,
+//   MacdIndicator,
+//   StochasticIndicator,
+//   Export,
+// } from "@syncfusion/ej2-react-charts";
 import { format } from "date-fns";
 
 import axios from "axios";
 import { useState } from "react";
 
-import { registerLicense } from "@syncfusion/ej2-base";
+// import { registerLicense } from "@syncfusion/ej2-base";
 
-registerLicense(
-  "Ngo9BigBOggjHTQxAR8/V1NGaF5cXmpCdkx0Rnxbf1xzZFRGal5UTndYUiweQnxTdEZjXn1acXRXTmFYU0J0Xw=="
-);
+// I have commented out the Syncfustion Chart Code as its licenes gets expired.
+
+// registerLicense(
+//   "Ngo9BigBOggjHTQxAR8/V1NGaF5cXmpCdkx0Rnxbf1xzZFRGal5UTndYUiweQnxTdEZjXn1acXRXTmFYU0J0Xw=="
+// );
 
 const baseURL = "http://localhost:5000";
 
@@ -207,9 +209,9 @@ const App = () => {
 
       {chartData?.length ? (
         <>
-          <div className="">Chart ({selectedStock?.toUpperCase()}) </div>
+          {/* <div className="">Chart ({selectedStock?.toUpperCase()}) </div> */}
           <div className="e-bigger">
-            <StockChartComponent
+            {/* <StockChartComponent
               key={chartData}
               id="stockchart"
               zoomsettings={{
@@ -263,7 +265,7 @@ const App = () => {
                   type="Candle"
                 ></StockChartSeriesDirective>
               </StockChartSeriesCollectionDirective>
-            </StockChartComponent>
+            </StockChartComponent> */}
           </div>
         </>
       ) : (
